@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitApiInstance {
-    private const val baseurl = "https://api.weatherapi.com"
+    private const val baseurl = "https://proud-still-orca.ngrok-free.app/"
 
     private fun getinstance() : Retrofit {
         return Retrofit.Builder()
@@ -14,5 +14,5 @@ object RetrofitApiInstance {
             .build()
     }
 
-    val api = getinstance().create(WeatherApi::class.java)
+    val api = getinstance().create(MeterApi::class.java)
 }

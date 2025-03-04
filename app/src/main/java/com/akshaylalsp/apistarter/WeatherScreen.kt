@@ -24,7 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.akshaylalsp.apistarter.api.NetworkResponse
 
 @Composable
-fun HomeScreen(modifier: Modifier = Modifier,viewModel: WeatherViewModel){
+fun HomeScreen1(modifier: Modifier = Modifier,viewModel: WeatherViewModel){
 
     var text by remember { mutableStateOf("") }
     val weatherresult = viewModel.weatherdata.observeAsState()

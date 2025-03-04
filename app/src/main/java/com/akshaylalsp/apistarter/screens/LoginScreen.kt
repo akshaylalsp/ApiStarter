@@ -19,10 +19,13 @@ fun LoginScreen(modifier: Modifier=Modifier){
 
     Column {
         OutlinedTextField(value = username, onValueChange = {username=it})
-        OutlinedTextField(value = password, onValueChange = {password=it})
+//        OutlinedTextField(value = password, onValueChange = {password=it})
         Row {
             Button(onClick = {}) {
-                Text("Login")
+                Text("User Login")
+            }
+            Button(onClick = {}) {
+                Text("Provider Login")
             }
         }
     }

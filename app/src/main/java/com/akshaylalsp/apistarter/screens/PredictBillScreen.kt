@@ -15,23 +15,10 @@ import com.himanshoe.charty.line.model.LineData
 
 @Composable
 fun PredictBillScreen(modifier: Modifier = Modifier){
-    var lindata = listOf(
-        LineData(1F,1),
-        LineData(4F,2),
-        LineData(5F,3),
-        LineData(73F,4),
-        LineData(12F,5),
-        LineData(16F,6)
 
-    )
     Column {
         Card(modifier = modifier.fillMaxWidth().padding(5.dp)) {
-            Text("Your Predicted Bill is $1232")
+            Text("Your Predicted Monthly Bill is $1232")
         }
-        Spacer(modifier = Modifier.height(10.dp))
-        LineChart(
-            data = {lindata},
-            showFilledArea = true
-        )
     }
 }
